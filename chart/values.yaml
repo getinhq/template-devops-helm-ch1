@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: nginx
-  tag: "1.25-alpine"
+  tag: "TODO-set-nginx-tag"
 service:
   type: ClusterIP
   port: 80

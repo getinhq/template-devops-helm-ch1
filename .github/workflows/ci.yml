@@ -13,3 +13,5 @@ jobs:
         with:
           version: "v3.14.0"
       - run: helm lint chart
+      - name: image tag must be set
+        run: '! grep -q "TODO-set-nginx-tag" chart/values.yaml'
